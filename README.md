@@ -1,72 +1,40 @@
-# git-command-generator README
+# Git Command Generator VSCode Extension
 
-This is the README for your extension "git-command-generator". After writing up a brief description, we recommend including the following sections.
+This project is a Visual Studio Code (VSCode) extension that helps generate Git commands using Natural Language Processing (NLP) techniques. It includes a webview panel with a chat interface where users can ask questions and receive Git command suggestions.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Interactive chat interface to ask questions.
+- Conversion of user queries into Git commands using NLP.
+- Ability to insert generated Git commands into the VSCode integrated terminal.
 
-For example if there is an image subfolder under your extension project workspace:
+## Technologies Used
 
-\!\[feature X\]\(images/feature-x.png\)
+- React.js for the webview panel.
+- TypeScript for type safety and VSCode API usage.
+- Webpack for bundling the extension.
+- OpenAI API (or alternative) for NLP-based Git command generation.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Installation
 
-## Requirements
+1. Clone the repository:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+   ```bash
+   git clone https://github.com/RutikKulkarni/git-command-generator-VSCode-Extension.git
+   ```
 
-## Extension Settings
+2. Install dependencies:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+   ```bash
+   npm install
+   ```
 
-For example:
+## Usage
 
-This extension contributes the following settings:
+1. Open Visual Studio Code.
+2. Press `F5` to start debugging the extension.
+3. In the new VSCode window, open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+4. Search for and execute the command to activate your extension (e.g., "Show Git Command Generator Panel").
+5. Use the chat interface to ask questions about Git commands.
+6. Click on the "Insert Command" button below each generated Git command to insert it into the integrated terminal.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
