@@ -13,7 +13,7 @@ export const App = () => {
     const userMessage: Message = { text: input, user: "user" };
     setMessages([...messages, userMessage]);
 
-    const response = await fetch("API_ENDPOINT", {
+    const response = await fetch("sk-proj-WOZVp5cK5nqcLR3UAux6T3BlbkFJSJufyHAKfzARvASKWJh4", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
